@@ -1,0 +1,30 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: pago-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/gym_db
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+jwt:
+  secret: "mi_clave_super_segura_de_gym_2026_minimo_32_chars"
+  expiration: 3600000
