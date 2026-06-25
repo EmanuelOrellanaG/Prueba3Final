@@ -1,12 +1,12 @@
 package com.example.reserva.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+@Getter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Setter
 
 public class ReservaDTO {
 

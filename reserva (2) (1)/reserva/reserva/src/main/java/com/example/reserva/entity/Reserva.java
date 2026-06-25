@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "reservas")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Reserva {
 
     @Id
@@ -22,6 +22,4 @@ public class Reserva {
     private Long claseId;
 
     private LocalDateTime fechaReserva;
-
-    private String username;
 }

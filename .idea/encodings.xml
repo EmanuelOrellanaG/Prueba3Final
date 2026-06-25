@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Auth_servP3/AuthenticationServ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ClaseP3/clase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EjercicioP3/ejercicio/ejercicio/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MembresiaP3/membresia/membresia/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PagoP3/pago/pago/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UsuarioP3/usuario/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apiGateWayP3/apigateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reserva (2) (1)/reserva/reserva/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rutina (2)/rutina/rutina/src/main/java" charset="UTF-8" />
+  </component>
+</project>

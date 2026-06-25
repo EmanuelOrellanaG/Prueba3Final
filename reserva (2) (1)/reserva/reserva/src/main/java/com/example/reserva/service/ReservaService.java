@@ -27,7 +27,6 @@ public class ReservaService {
     public Reserva crear(ReservaDTO dto, String username) {
 
         UsuarioDTO usuario = usuarioClient.obtenerPorUsername(username);
-
         ClaseDTO clase = claseClient.obtenerClase(dto.getClaseId());
 
         if (clase.getCuposDisponibles() <= 0) {
@@ -40,7 +39,8 @@ public class ReservaService {
         );
 
         Reserva r = new Reserva();
-        r.setUsername(username); // YA NO usuarioId
+
+        r.setUsuarioId(usuario.getId());
         r.setClaseId(dto.getClaseId());
         r.setFechaReserva(LocalDateTime.now());
 

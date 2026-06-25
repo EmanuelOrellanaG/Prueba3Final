@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/PagoP3/pago/pago/pom.xml" />
+        <option value="$PROJECT_DIR$/ClaseP3/clase/pom.xml" />
+        <option value="$PROJECT_DIR$/UsuarioP3/usuario/pom.xml" />
+        <option value="$PROJECT_DIR$/rutina (2)/rutina/rutina/pom.xml" />
+        <option value="$PROJECT_DIR$/Auth_servP3/AuthenticationServ/pom.xml" />
+        <option value="$PROJECT_DIR$/EjercicioP3/ejercicio/ejercicio/pom.xml" />
+        <option value="$PROJECT_DIR$/MembresiaP3/membresia/membresia/pom.xml" />
+        <option value="$PROJECT_DIR$/apiGateWayP3/apigateway/pom.xml" />
+        <option value="$PROJECT_DIR$/reserva (2) (1)/reserva/reserva/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-26 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
