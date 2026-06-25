@@ -18,7 +18,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    database-platform: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
 
 springdoc:
   api-docs:
@@ -28,7 +28,7 @@ springdoc:
     path: /swagger-ui.html
 
 jwt:
-  secret: "mi_clave_super_segura_de_gym_2026_minimo_32_chars"
+  secret: mi_clave_super_segura_de_gym_2026_minimo_32_chars
 
 management:
   endpoints:
@@ -39,3 +39,9 @@ management:
   endpoint:
     health:
       show-details: always
+
+
+eureka:
+  client:
+    enabled: false
+
