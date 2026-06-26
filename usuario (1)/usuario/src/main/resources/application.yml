@@ -6,7 +6,7 @@ spring:
     name: usuario-service
 
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/gym_db
+    url: jdbc:mysql://host.docker.internal:3306/gym_db?allowPublicKeyRetrieval=true&useSSL=false
     username: root
     password: ""
     driver-class-name: com.mysql.cj.jdbc.Driver

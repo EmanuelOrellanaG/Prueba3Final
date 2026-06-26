@@ -29,10 +29,9 @@ services:
       - rutina-service
       - clase-service
       - reserva-service
-      -
   # 🔐 AUTH SERVICE
   auth-service:
-    build: ./Auth_servP3/AuthenticationServ/AuthenticationServ
+    build: ./Auth_servP3/AuthenticationServ
     container_name: auth-service
     ports:
       - "8081:8081"
