@@ -11,53 +11,117 @@ spring:
         webmvc:
           routes:
 
-            # AUTH
+
+
             - id: auth-service
               uri: http://auth-service:8081
               predicates:
-                - Path=/auth/**
+                - Path=/auth/**, /swagger-ui/**, /v3/api-docs, /swagger-ui.html
 
-            # USUARIO
+
             - id: usuario-service
               uri: http://usuario-service:8082
               predicates:
                 - Path=/api/usuarios/**
+            - id: usuario-swagger
+              uri: http://usuario-service:8082
+              predicates:
+                - Path=/docs-usuario/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # MEMBRESIA
+
             - id: membresia-service
               uri: http://membresia-service:8083
               predicates:
                 - Path=/api/membresias/**
+            - id: membresia-swagger
+              uri: http://membresia-service:8083
+              predicates:
+                - Path=/docs-membresia/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # PAGO
+
             - id: pago-service
               uri: http://pago-service:8084
               predicates:
                 - Path=/api/pagos/**
+            - id: pago-swagger
+              uri: http://pago-service:8084
+              predicates:
+                - Path=/docs-pago/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # EJERCICIO
+
             - id: ejercicio-service
               uri: http://ejercicio-service:8085
               predicates:
                 - Path=/api/ejercicios/**
+            - id: ejercicio-swagger
+              uri: http://ejercicio-service:8085
+              predicates:
+                - Path=/docs-ejercicio/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # RUTINA
+
             - id: rutina-service
               uri: http://rutina-service:8086
               predicates:
                 - Path=/api/rutinas/**
+            - id: rutina-swagger
+              uri: http://rutina-service:8086
+              predicates:
+                - Path=/docs-rutina/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # CLASE
+
             - id: clase-service
               uri: http://clase-service:8087
               predicates:
                 - Path=/api/clases/**
+            - id: clase-swagger
+              uri: http://clase-service:8087
+              predicates:
+                - Path=/docs-clase/v3/api-docs/**
+              filters:
+                - StripPrefix=1
 
-            # RESERVA
+
             - id: reserva-service
               uri: http://reserva-service:8088
               predicates:
                 - Path=/api/reservas/**
+            - id: reserva-swagger
+              uri: http://reserva-service:8088
+              predicates:
+                - Path=/docs-reserva/v3/api-docs/**
+              filters:
+                - StripPrefix=1
+
+
+springdoc:
+  swagger-ui:
+    urls:
+      - name: "🔐 Autenticación"
+        url: /v3/api-docs
+      - name: "👤 Usuarios"
+        url: /docs-usuario/v3/api-docs
+      - name: "🎫 Membresías"
+        url: /docs-membresia/v3/api-docs
+      - name: "💳 Pagos"
+        url: /docs-pago/v3/api-docs
+      - name: "🏋️ Ejercicios"
+        url: /docs-ejercicio/v3/api-docs
+      - name: "📋 Rutinas"
+        url: /docs-rutina/v3/api-docs
+      - name: "🧑‍🏫 Clases"
+        url: /docs-clase/v3/api-docs
+      - name: "📅 Reservas"
+        url: /docs-reserva/v3/api-docs
 
 jwt:
-  secret: "mi_clave_super_segura_de_gym_2026_minimo_32_chars"
+  secret: mi_clave_super_segura_de_gym_2026_minimo_32_chars
